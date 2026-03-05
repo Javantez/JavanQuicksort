@@ -1,23 +1,38 @@
-# JavanQuicksort
-A clean, in-place implementation of the **QuickSort** algorithm in C, with both **ascending** and **descending** order variants using the Lomuto partition scheme.
+#JavanQuicksort 
 
-## Features
+OVERVIEW 
 
-- In-place sorting (no extra array needed)
-- Uses **Lomuto partition** scheme
-- Recursive implementation
-- Supports sorting in **ascending** and **descending** order
-- Simple and readable variable names
+This project implements the Quick Sort algorithm to sort a dataset of 10,000,000 items. Quick Sort is a divide-and-conquer sorting algorithm that selects a pivot element and partitions the array around it so that smaller elements come before the pivot and larger elements come after it.
 
-## Code Overview
+## ALGORITHMS STEPS
 
-| File/Function       | Description                                      |
-|---------------------|--------------------------------------------------|
-| `quickSort()`       | Ascending order QuickSort (smaller elements left) |
-| `quickSortDesc()`   | Descending order QuickSort (larger elements left)|
+ 1.Select a pivot element (last element in the array).
+ 2.Partition the array so that elements smaller than the pivot are on the left and larger ones on the right.
+ 3.Place the pivot in its correct sorted position.
+ 4.Recursively apply Quick Sort to the left and right subarrays.
 
-## Conclusion
-This project demonstrates the implementation and performance analysis of the Quick Sort algorithm when sorting a dataset of 10 million items. The experimental results show that Quick Sort performs efficiently in most cases, making it a practical choice for large-scale sorting tasks.
+## TIME COMPLEXITY:
 
-## Author
-Javan Otieno Eb3.67256.23
+ -Best case: O(n log n)
+
+ -Average case: O(n log n)
+
+ -Worst case: O(n²)
+
+## SPACE COMPLEXITY 
+
+ -Average Case: O(log n)
+
+ -Worst Case: O(n)
+
+## ADVANTAGES
+
+ 1.Fast for large datasets
+ 2.Efficient divide-and-conquer approach
+ 3.Widely used in real-world applications
+
+## CONCLUSION 
+Quick Sort is an efficient sorting algorithm with an average time complexity of O(n log n), making it suitable for sorting very large datasets such as 10 million items.
+
+# Author
+Javan otieno Eb3.67256.23
